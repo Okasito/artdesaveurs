@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notre carte - L'art des saveurs</title>
+
+    <link href="resto.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <style>
+        main {
+            padding-top: 120px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="header-container" id="headerMerci">
+        <a href="index.html" class="header-link">
+            <img src="logo-header-gauche.png" class="logo">
+            <h1>L'art des saveurs</h1>
+        </a>
+    </div>
+</header>
+
+<main>
+    <section id="menu">
+
+        <!-- ONGLETS -->
+        <div class="menu-tabs">
+            <button class="tab-btn active" data-tab="salees">Crêpes salées</button>
+            <button class="tab-btn" data-tab="sucrees">Crêpes sucrées</button>
+            <button class="tab-btn" data-tab="chaudes">Boissons chaudes</button>
+            <button class="tab-btn" data-tab="fraiches">Boissons fraîches</button>
+            <button class="tab-btn" data-tab="alcools">Alcools</button>
+        </div>
+
+        <!-- CONTENU CRÊPES SALÉES -->
+        <div class="tab-content active" id="salees">
+            <div class="menu-categorie">
+                <h4>Crêpes salées</h4>
+                <div class="menu-item">
+                    <span class="menu-nom">Complète (jambon, œuf, fromage)</span>
+                    <span class="menu-prix">9,50 €</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-nom">Forestière (champignons, crème, fromage)</span>
+                    <span class="menu-prix">9,00 €</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-nom">Bretonne (andouille, oignons, moutarde)</span>
+                    <span class="menu-prix">9,50 €</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-nom">Végétarienne (épinards, chèvre, noix)</span>
+                    <span class="menu-prix">9,00 €</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-nom">Savoyarde (reblochon, pommes de terre, lardons)</span>
+                    <span class="menu-prix">10,50 €</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-nom">Norvégienne (saumon fumé, crème, aneth)</span>
+                    <span class="menu-prix">11,00 €</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-nom">Provençale (tomates, olives, herbes de Provence)</span>
+                    <span class="menu-prix">8,50 €</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-nom">Basque (piperade, jambon de Bayonne)</span>
+                    <span class="menu-prix">9,50 €</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-nom">Océane (fruits de mer, crème, ciboulette)</span>
+                    <span class="menu-prix">11,50 €</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-nom">Paysanne (lardons, pommes de terre, fromage)</span>
+                    <span class="menu-prix">9,50 €</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-nom">Poulet curry (poulet, curry, crème)</span>
+                    <span class="menu-prix">10,00 €</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-nom">Simple beurre (beurre demi-sel)</span>
+                    <span class="menu-prix">4,50 €</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- CONTENU CRÊPES SUCRÉES -->
+        <div class="tab-content" id="sucrees">
+            <div class="menu-categorie">
+                <h4>Crêpes sucrées</h4>
+                <div class="menu-item">
+                    <span class="menu-nom">Beurre sucre</span>
+                    <span class="menu-prix">4,50 €</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-nom">Nutella</span>
+                    <span class="menu-prix">5,50 €</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-nom">Caramel au beurre salé</span>
+                    <span class="menu-prix">5,50 €</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-nom">Confiture maison (fraise, framboise ou abricot)</span>
+                    <span class="menu-prix">5,00 €</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-nom">Chocolat, banane, chantilly</span>
+                    <span class="menu-prix">6,50 €</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- CONTENU BOISSONS CHAUDES -->
+        <div class="tab-content" id="chaudes">
+            <div class="menu-categorie">
+                <h4>Boissons chaudes</h4>
+                <div class="menu-item">
+                    <span class="menu-nom">Café</span>
+                    <span class="menu-prix">2,00 €</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-nom">Cappuccino</span>
+                    <span class="menu-prix">3,50 €</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-nom">Grand crème</span>
+                    <span class="menu-prix">3,50 €</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-nom">Chocolat chaud</span>
+                    <span class="menu-prix">4,00 €</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-nom">Thé</span>
+                    <span class="menu-prix">3,00 €</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- CONTENU BOISSONS FRAÎCHES -->
+        <div class="tab-content" id="fraiches">
+            <div class="menu-categorie">
+                <h4>Softs</h4>
+                <div class="menu-item">
+                    <span class="menu-nom">Coca-Cola</span>
+                    <span class="menu-prix">3,50 €</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-nom">Fuze Tea</span>
+                    <span class="menu-prix">3,50 €</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-nom">Perrier</span>
+                    <span class="menu-prix">3,50 €</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-nom">Orangina</span>
+                    <span class="menu-prix">3,50 €</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-nom">Sprite</span>
+                    <span class="menu-prix">3,50 €</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-nom">Schweppes</span>
+                    <span class="menu-prix">3,50 €</span>
+                </div>
+            </div>
+
+            <div class="menu-categorie">
+                <h4>Sirops</h4>
+                <div class="menu-item">
+                    <span class="menu-nom">Menthe</span>
+                    <span class="menu-prix">2,00 €</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-nom">Grenadine</span>
+                    <span class="menu-prix">2,00 €</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-nom">Citron</span>
+                    <span class="menu-prix">2,00 €</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-nom">Fraise</span>
+                    <span class="menu-prix">2,00 €</span>
+                </div>
+            </div>
+
+            <div class="menu-categorie">
+                <h4>Smoothies</h4>
+                <div class="menu-item">
+                    <span class="menu-nom">Fraise banane</span>
+                    <span class="menu-prix">5,50 €</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-nom">Mangue passion</span>
+                    <span class="menu-prix">5,50 €</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-nom">Ananas coco</span>
+                    <span class="menu-prix">5,50 €</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-nom">Pomme kiwi</span>
+                    <span class="menu-prix">5,50 €</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-nom">Fruits rouges</span>
+                    <span class="menu-prix">5,50 €</span>
+                </div>
+            </div>
+
+            <div class="menu-categorie">
+                <h4>Mocktails</h4>
+                <div class="menu-item">
+                    <span class="menu-nom">Virgin mojito</span>
+                    <span class="menu-prix">6,00 €</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-nom">Virgin piña colada</span>
+                    <span class="menu-prix">6,50 €</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-nom">Fraise basilic</span>
+                    <span class="menu-prix">6,00 €</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- CONTENU ALCOOLS -->
+        <div class="tab-content" id="alcools">
+            <div class="menu-categorie">
+                <h4>Apéritifs</h4>
+                <div class="menu-item">
+                    <span class="menu-nom">Pastis 51</span>
+                    <span class="menu-prix">4,50 €</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-nom">Raki</span>
+                    <span class="menu-prix">5,00 €</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-nom">Martini blanc</span>
+                    <span class="menu-prix">5,00 €</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-nom">Martini rouge</span>
+                    <span class="menu-prix">5,00 €</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-nom">Kir breton</span>
+                    <span class="menu-prix">4,50 €</span>
+                </div>
+            </div>
+
+            <div class="menu-categorie">
+                <h4>Cocktails</h4>
+                <div class="menu-item">
+                    <span class="menu-nom">Mojito</span>
+                    <span class="menu-prix">8,00 €</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-nom">Piña colada</span>
+                    <span class="menu-prix">8,50 €</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-nom">Spritz</span>
+                    <span class="menu-prix">7,50 €</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-nom">Sex on the beach</span>
+                    <span class="menu-prix">8,50 €</span>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</main>
+
+<a href="reservation.html" class="btn-flottant">Réserver</a>
+
+<script>
+const tabBtns = document.querySelectorAll(".tab-btn");
+const tabContents = document.querySelectorAll(".tab-content");
+
+tabBtns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+        tabBtns.forEach((b) => b.classList.remove("active"));
+        tabContents.forEach((c) => c.classList.remove("active"));
+
+        btn.classList.add("active");
+        const target = document.getElementById(btn.dataset.tab);
+        target.classList.add("active");
+    });
+});
+</script>
+
+</body>
+</html>
