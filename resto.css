@@ -299,6 +299,10 @@ iframe {
         padding: 0 10px;
     }
 
+    .menu-btn {
+        margin-right: 10px;
+    }
+
     header h1 {
         font-size:45px;
         white-space: nowrap;
@@ -320,7 +324,7 @@ iframe {
         font-size: 24px;
         padding: 0 20px;
         text-align: center;
-        margin-top: 100px;
+        margin-top: 80px;
     }
 
     /* MAIN CONTENT */
@@ -514,6 +518,7 @@ iframe {
 .moodboard-item img {
     width: 100%;
     display: block;
+    cursor: pointer;
 }
 
 .moodboard-item:hover {
@@ -531,6 +536,46 @@ iframe {
 
 .item-2:hover, .item-4:hover {
     transform: scale(1.03) rotate(0deg);
+}
+
+.image-lightbox {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    background: rgba(58, 44, 30, 0.88);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.25s ease, visibility 0.25s ease;
+    z-index: 2000;
+}
+
+.image-lightbox.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.image-lightbox img {
+    max-width:  min(90vw, 900px);
+    max-height: 85vh;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.35);
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    padding: 0;
+    background: none;
+    color: white;
+    font-size: 40px;
+    font-weight: normal;
+    line-height: 1;
+    cursor: pointer;
 }
 /*bouton carte*/
 .btn-carte-wrapper {
