@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="utf-8"> 
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant page</title>
 
@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 </head>
 <body>
+
 <header>
     <div class="header-container">
 
@@ -31,88 +32,80 @@
     <a href="menu.html">Menu</a>
     <a href="reservation.html">Réservation</a>
     <a href="#contact">Contact</a>
-    <a href="#location">Nous trouver</a>
 </nav>
+
 <!-- HERO -->
-<section class="hero">
-</section>
-   </div>
-</section>
+<section class="hero"></section>
 
 <!-- À PROPOS -->
-<section id="apropos">
+<section id="apropos" class="fade-in">
     <h2>Notre histoire</h2>
     <div class="apropos-content">
         <p>
-            Ici, la crêpe n'est pas juste une recette, c'est un savoir-faire transmis avec passion. 
-            Chez L'art des saveurs, nous travaillons le sarrasin selon des méthodes traditionnelles 
+            Ici, la crêpe n'est pas juste une recette, c'est un savoir-faire transmis avec passion.
+            Chez L'art des saveurs, nous travaillons le sarrasin selon des méthodes traditionnelles
             bretonnes, dans le respect d'un produit simple mais exigeant.
         </p>
         <p>
-            Chaque galette est préparée à la commande, sur une bilig chaude, avec des farines 
-            soigneusement sélectionnées. Une cuisine artisanale, sans détour, où le geste compte 
+            Chaque galette est préparée à la commande, sur une bilig chaude, avec des farines
+            soigneusement sélectionnées. Une cuisine artisanale, sans détour, où le geste compte
             autant que l'ingrédient.
         </p>
     </div>
-<img src="logo-guru.png" alt="Certification Guru" class="apropos-logo">
+    <img src="logo-guru.png" alt="Certification Guru" class="apropos-logo">
 </section>
+
 <!-- GALERIE DES PLATS -->
-<section id="galerie">
+<section id="galerie" class="fade-in">
     <h2>Nos créations</h2>
     <div class="moodboard">
         <div class="moodboard-item item-1">
-            <img src="https://picsum.photos/seed/crepe1/500/400" alt="Crêpe complète">
+            <img src="galette11.png" alt="Crêpe complète">
         </div>
         <div class="moodboard-item item-2">
-            <img src="https://picsum.photos/seed/crepe2/400/500" alt="Crêpe Savoyarde">
+            <img src="galette12.png" alt="Crêpe Savoyarde">
         </div>
         <div class="moodboard-item item-3">
-            <img src="https://picsum.photos/seed/crepe3/400/400" alt="Crêpe Nutella">
+            <img src="galette13.png" alt="Crêpe Nutella">
         </div>
-        <div class="moodboard-item item-4">
-            <img src="https://picsum.photos/seed/crepe4/500/350" alt="Crêpe Forestière">
+    </div>
+
+    <div class="btn-carte-wrapper">
+        <a href="menu.html" class="btn-carte">Découvrir notre carte complète</a>
+    </div>
+
+    <div class="horaires">
+        <h3>Nos horaires</h3>
+        <div class="horaires-ligne">
+            <span>Mardi - Vendredi</span>
+            <span>12h00 - 14h00 / 19h00 - 22h00</span>
         </div>
-        <div class="moodboard-item item-5">
-            <img src="https://picsum.photos/seed/crepe5/400/450" alt="Crêpe Bretonne">
+        <div class="horaires-ligne">
+            <span>Samedi</span>
+            <span>19h00 - 23h00</span>
+        </div>
+        <div class="horaires-ligne">
+            <span>Dimanche - Lundi</span>
+            <span>Fermé</span>
         </div>
     </div>
 </section>
-    </div>
-</section>
-<div class="btn-carte-wrapper">
-    <a href="menu.html" class="btn-carte">Découvrir notre carte complète</a>
-</div>
-<div class="horaires">
-    <h3>Nos horaires</h3>
-    <div class="horaires-ligne">
-        <span>Mardi - Vendredi</span>
-        <span>12h00 - 14h00 / 19h00 - 22h00</span>
-    </div>
-    <div class="horaires-ligne">
-        <span>Samedi</span>
-        <span>19h00 - 23h00</span>
-    </div>
-    <div class="horaires-ligne">
-        <span>Dimanche - Lundi</span>
-        <span>Fermé</span>
-    </div>
-</div>
+
 <main>
 
-<!--section contact-->
-<section id="contact">
-</section>
-<!--section maps-->
-<section id="location">
-    <h2>Nous trouver</h2>
-<!--lien maps-->
-    <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18..."
-        height="300">
-    </iframe>
-</section>
-</main>
-<!--footer contact-->
+    <!-- CONTACT -->
+    <section id="contact" class="fade-in">
+    </section>
+
+    <!-- NOUS TROUVER -->
+    <section id="location" class="fade-in">
+        <h2>Nous trouver</h2>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18..."
+            height="300">
+        </iframe>
+    </section>
+
 </main>
 
 <footer class="site-footer">
@@ -145,29 +138,43 @@
 
     <p class="footer-copyright">© 2026 L'art des saveurs — Tous droits réservés</p>
 </footer>
-<!--partie script-->
+
+<a href="reservation.html" class="btn-flottant">Réserver</a>
+
 <script>
-<!--animation bouton menu hamburger-->
 const menuBtn = document.getElementById("menuBtn");
 const sideMenu = document.getElementById("sideMenu");
+
 menuBtn.addEventListener("click", (e) => {
     e.stopPropagation();
     menuBtn.classList.toggle("active");
     sideMenu.classList.toggle("active");
 });
-<!--animation flou image background-->
+
 document.addEventListener("click", (e) => {
     if (!sideMenu.contains(e.target) && !menuBtn.contains(e.target)) {
         menuBtn.classList.remove("active");
         sideMenu.classList.remove("active");
     }
 });
+
 const hero = document.querySelector(".hero");
 window.addEventListener("scroll", () => {
     const flou = Math.min(window.scrollY / 150, 3);
     hero.style.filter = `blur(${flou}px)`;
 });
+
+const faders = document.querySelectorAll(".fade-in");
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+        }
+    });
+}, { threshold: 0.2 });
+
+faders.forEach((el) => observer.observe(el));
 </script>
-<a href="reservation.html" class="btn-flottant">Réserver</a>
+
 </body>
 </html>
