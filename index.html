@@ -141,6 +141,11 @@
 
 <a href="reservation.html" class="btn-flottant">Réserver</a>
 
+<div class="image-lightbox" id="imageLightbox" aria-hidden="true">
+    <button class="lightbox-close" type="button" aria-label="Fermer l'image">&times;</button>
+    <img id="lightboxImage" src="" alt="">
+</div>
+
 <script>
 const menuBtn = document.getElementById("menuBtn");
 const sideMenu = document.getElementById("sideMenu");
@@ -174,6 +179,38 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.2 });
 
 faders.forEach((el) => observer.observe(el));
+
+const lightbox = document.getElementById("imageLightbox");
+const lightboxImage = document.getElementById("lightboxImage");
+const lightboxClose = document.querySelector(".lightbox-close");
+const galleryImages = document.querySelectorAll(".moodboard-item img");
+
+function closeLightbox() {
+    lightbox.classList.remove("active");
+    lightbox.setAttribute("aria-hidden", "true");
+}
+
+galleryImages.forEach((image) => {
+    image.addEventListener("click", () => {
+        lightboxImage.src = image.src;
+        lightboxImage.alt = image.alt;
+        lightbox.classList.add("active");
+        lightbox.setAttribute("aria-hidden", "false");
+    });
+});
+
+lightboxClose.addEventListener("click", closeLightbox);
+lightbox.addEventListener("click", (event) => {
+    if (event.target === lightbox) {
+        closeLightbox();
+    }
+});
+
+document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+        closeLightbox();
+    }
+});
 </script>
 
 </body>
